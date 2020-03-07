@@ -8,10 +8,13 @@ Fecha: 06/03/2020-xx/xx/2020
 #include <iostream>
 #include <wchar.h>
 
+char PalabrasRandom();
+
 using namespace std;
 
 //afuera del main para no andar poniendolo en todo lado varias veces
-char palabra[50]=("la hiper mega frase"), rep[100], temp [100];
+char rep[100], temp [100], RandomWord[50];
+char palabra[50]="pruebas";
 int longitud=0, i, j=0, inicial=0, acierto=0, temporal=0, oport=11;
 bool repetido=false, ganar=false;//verificar sí si da, o si no :v
 
@@ -121,6 +124,7 @@ int main()
 {
 	setlocale(LC_ALL, "");
 	system("cls");
+	cout<<PalabrasRandom();
 	Juego Victima;//va a la parte en la que se abre el juego
 	Imprimir mostrar;//va a la parte del mensaje
 	Victima.Ahorcado();//se le asigna jugador a la funcion que acaba de llamar a la clase
@@ -139,4 +143,10 @@ int main()
 	cout<<endl<<endl;
 	system("PAUSE");
 	return 0;
+}
+
+char PalabrasRandom()
+{
+	char palabra[50]="";
+	return palabra[50];
 }
